@@ -12,6 +12,7 @@
 <form action="/SimpleServletTest/AddData" method="post">
 	Name: <input name="name" type="text" />
 	Date: <input name="date" type="text" />
+	Desc: <input name="description" type="text" />
 	Quantity: <input name="quantity" type="text" />
 	Price: <input name="price" type="text" />
 	
