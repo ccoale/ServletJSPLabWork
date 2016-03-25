@@ -1,8 +1,9 @@
 package com.chris;
 
 public class User {
-	private String _name;
-	private String _email;
+	private String name;
+	private String email;
+	private int id;
 	
 	
 	public User(String name, String email) {
@@ -11,19 +12,27 @@ public class User {
 	}
 	
 	public void setName(String name) {
-		_name = name;
+		this.name = name;
 	}
 	
 	public String getName() {
-		return _name;
+		return name;
 	}
 	
 	public void setEmail(String email) {
-		_email = email;
+		this.email = email;
 	}
 	
 	public String getEmail() {
-		return _email;
+		return email;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getId() {
+		return id;
 	}
 
 }

@@ -9,11 +9,12 @@
 </head>
 <body>
 <h1>Here is the data:</h1>
+<a href="/SimpleServletTest/home">Go back home</a><br/>
 <table>
 <th>
-	<tr><td>Name</td> <td>Date</td> <td>Description</td> <td>Quantity</td> <td>Price</td> </tr>
+	<tr><td>Name</td> <td>Date</td> <td>Description</td> <td>Quantity</td> <td>Price</td> <td> User ID </td></tr>
 <c:forEach var="record" items="${data}">
-	<tr><td>${record.name}</td> <td>${record.date}</td> <td>${record.description}</td> <td>${record.quantity}</td> <td>${record.price}</td></tr>
+	<tr><td>${record.name}</td> <td>${record.date}</td> <td>${record.description}</td> <td>${record.quantity}</td> <td>${record.price}</td> <td>${record.userid}</td></tr>
 </c:forEach>
 </table>
 </body>

@@ -1,11 +1,20 @@
 package com.chris;
 
+import javax.persistence.Entity;
+
+@Entity
 public class DataRecord {
-	private String _name;
-	private String _date;
-	private String _description;
-	private int _quantity;
-	private double _price;
+	private String name;
+	private String date;
+	private String description;
+	private int quantity;
+	private double price;
+	private int userid;
+	private int id;
+	
+	public DataRecord()
+	{		
+	}
 	
 	public DataRecord(String name, String date, String desc, int quant, double price) {
 		setName(name);
@@ -13,45 +22,64 @@ public class DataRecord {
 		setDescription(desc);
 		setQuantity(quant);
 		setPrice(price);
+		setUserid(0);
 	}
 	
 	public String getName() {
-		return _name;
+		return name;
 	}
 	
 	public void setName(String name) {
-		_name = name;
+		this.name = name;
 	}
 	
 	public String getDate() {
-		return _date;
+		return date;
 	}
 	
 	public void setDate(String date) {
-		_date = date;
+		this.date = date;
 	}
 	
 	public String getDescription() {
-		return _description;
+		return description;
 	}
 	
 	public void setDescription(String description) {
-		_description = description;
+		this.description = description;
 	}
 	
 	public int getQuantity() {
-		return _quantity;
+		return quantity;
 	}
 	
 	public void setQuantity(int quantity) {
-		_quantity = quantity;
+		this.quantity = quantity;
 	}
 	
 	public double getPrice() {
-		return _price;
+		return price;
 	}
 	
 	public void setPrice(double price) {
-		_price = price;
+		this.price = price;
 	}
+
+	public int getUserid() {
+		return userid;
+	}
+
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+
 }
